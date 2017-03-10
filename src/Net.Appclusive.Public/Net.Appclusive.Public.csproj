@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5ED5A163-5CBF-4A5B-913A-51BCE3E1B6DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Net.Appclusive.Public</RootNamespace>
+    <AssemblyName>Net.Appclusive.Public</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <CodeContractsAssemblyMode>1</CodeContractsAssemblyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>True</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>True</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>True</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>True</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>True</CodeContractsRedundantAssumptions>
+    <CodeContractsAssertsToContractsCheckBox>True</CodeContractsAssertsToContractsCheckBox>
+    <CodeContractsRedundantTests>True</CodeContractsRedundantTests>
+    <CodeContractsMissingPublicRequiresAsWarnings>True</CodeContractsMissingPublicRequiresAsWarnings>
+    <CodeContractsMissingPublicEnsuresAsWarnings>False</CodeContractsMissingPublicEnsuresAsWarnings>
+    <CodeContractsInferRequires>True</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferEnsuresAutoProperties>True</CodeContractsInferEnsuresAutoProperties>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestAssumptionsForCallees>False</CodeContractsSuggestAssumptionsForCallees>
+    <CodeContractsSuggestRequires>False</CodeContractsSuggestRequires>
+    <CodeContractsNecessaryEnsures>True</CodeContractsNecessaryEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsSuggestReadonly>True</CodeContractsSuggestReadonly>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsSQLServerOption />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>True</CodeContractsCacheAnalysisResults>
+    <CodeContractsSkipAnalysisIfCannotConnectToCache>False</CodeContractsSkipAnalysisIfCannotConnectToCache>
+    <CodeContractsFailBuildOnWarnings>False</CodeContractsFailBuildOnWarnings>
+    <CodeContractsBeingOptimisticOnExternal>True</CodeContractsBeingOptimisticOnExternal>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>Build</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>True</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>True</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>True</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>True</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>True</CodeContractsRedundantAssumptions>
+    <CodeContractsAssertsToContractsCheckBox>True</CodeContractsAssertsToContractsCheckBox>
+    <CodeContractsRedundantTests>True</CodeContractsRedundantTests>
+    <CodeContractsMissingPublicRequiresAsWarnings>True</CodeContractsMissingPublicRequiresAsWarnings>
+    <CodeContractsMissingPublicEnsuresAsWarnings>False</CodeContractsMissingPublicEnsuresAsWarnings>
+    <CodeContractsInferRequires>True</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferEnsuresAutoProperties>True</CodeContractsInferEnsuresAutoProperties>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestAssumptionsForCallees>False</CodeContractsSuggestAssumptionsForCallees>
+    <CodeContractsSuggestRequires>False</CodeContractsSuggestRequires>
+    <CodeContractsNecessaryEnsures>True</CodeContractsNecessaryEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsSuggestReadonly>True</CodeContractsSuggestReadonly>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsSQLServerOption />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>True</CodeContractsCacheAnalysisResults>
+    <CodeContractsSkipAnalysisIfCannotConnectToCache>False</CodeContractsSkipAnalysisIfCannotConnectToCache>
+    <CodeContractsFailBuildOnWarnings>False</CodeContractsFailBuildOnWarnings>
+    <CodeContractsBeingOptimisticOnExternal>True</CodeContractsBeingOptimisticOnExternal>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>Build</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>dfch.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="biz.dfch.CS.Commons, Version=1.12.0.28845, Culture=neutral, PublicKeyToken=ddc350d26de1d0d9, processorArchitecture=MSIL">
+      <HintPath>..\packages\biz.dfch.CS.Commons.1.12.0\lib\net46\biz.dfch.CS.Commons.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.3.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonAssemblySettings.cs">
+      <Link>Properties\CommonAssemblySettings.cs</Link>
+    </Compile>
+    <Compile Include="Constants\HealthCheckSettings.cs" />
+    <Compile Include="Constants\Data.cs" />
+    <Compile Include="Constants\Messaging.cs" />
+    <Compile Include="Constants\Security.cs" />
+    <Compile Include="Constants\Workflow.cs" />
+    <Compile Include="Domain\Diagnostics\CacheItem.cs" />
+    <Compile Include="Domain\Identity\TenantInformation.cs" />
+    <Compile Include="Domain\PublicEntityDetails.cs" />
+    <Compile Include="Domain\Catalogue\Order.cs" />
+    <Compile Include="Domain\Catalogue\Cart.cs" />
+    <Compile Include="Domain\Diagnostics\HealthCheck.cs" />
+    <Compile Include="Domain\General\Job.cs" />
+    <Compile Include="Domain\Security\ItemAcl.cs" />
+    <Compile Include="Domain\TenantDetails.cs" />
+    <Compile Include="Domain\Inventory\ModelItem.cs" />
+    <Compile Include="Linq\ExpressionExtensions.cs" />
+    <Compile Include="Messaging\BuildModelMessageBody.cs" />
+    <Compile Include="Messaging\ContractClassForIMessagingClient.cs" />
+    <Compile Include="Messaging\DefaultMessageHeader.cs" />
+    <Compile Include="Messaging\IMessagingClient.cs" />
+    <Compile Include="Messaging\Message.cs" />
+    <Compile Include="Messaging\MessageQueue.cs" />
+    <Compile Include="Security\Permission.cs" />
+    <Compile Include="Types\BoxedLambdaExpression.cs" />
+    <Compile Include="Types\IdNameDescriptionTuple.cs" />
+    <Compile Include="Types\IdNameValueTuple.cs" />
+    <Compile Include="Types\IdNamePair.cs" />
+    <Compile Include="Types\IdValuePair.cs" />
+    <Compile Include="Types\NameValuePair.cs" />
+    <Compile Include="Engine\IBehaviourOrAttribute.cs" />
+    <Compile Include="Formatter\Format.cs" />
+    <Compile Include="Constants\CacheSettings.cs" />
+    <Compile Include="Domain\ActionNameAttribute.cs" />
+    <Compile Include="Domain\Configuration\Example.cs" />
+    <Compile Include="Domain\Security\Ace.cs" />
+    <Compile Include="Domain\Security\AceType.cs" />
+    <Compile Include="Domain\Security\Right.cs" />
+    <Compile Include="Domain\Security\Role.cs" />
+    <Compile Include="Domain\Security\RoleType.cs" />
+    <Compile Include="Executor\BehaviourInformation.cs" />
+    <Compile Include="Executor\IBehaviourInformation.cs" />
+    <Compile Include="Executor\IModelExecutorFactorySettings.cs" />
+    <Compile Include="Executor\IModelInformation.cs" />
+    <Compile Include="Executor\ModelInformation.cs" />
+    <Compile Include="Pure.cs" />
+    <Compile Include="Constants\Authentication.cs" />
+    <Compile Include="Constants\ErrorCode.cs" />
+    <Compile Include="Constants\Identity.cs" />
+    <Compile Include="Constants\Logging.cs" />
+    <Compile Include="Constants\Odata.cs" />
+    <Compile Include="Constants\ModelExecutor.cs" />
+    <Compile Include="Engine\AttributeConverter.cs" />
+    <Compile Include="Engine\ContractClassForBaseBehaviour.cs" />
+    <Compile Include="Engine\BehaviourManager.cs" />
+    <Compile Include="Engine\IModelSettings.cs" />
+    <Compile Include="Engine\BaseModelStates.cs" />
+    <Compile Include="Engine\ModelState.cs" />
+    <Compile Include="Engine\BehaviourDefinitionAttribute.cs" />
+    <Compile Include="Engine\BehaviourDefinitionForAttribute.cs" />
+    <Compile Include="Engine\ConnectionConstraintForAttribute.cs" />
+    <Compile Include="Engine\ConnectionToAttribute.cs" />
+    <Compile Include="Engine\ContractClassForIConnectionConstraintValidator.cs" />
+    <Compile Include="Engine\IConnectionConstraintValidator.cs" />
+    <Compile Include="Engine\BaseBehaviour.cs" />
+    <Compile Include="Engine\IBaseModelAction.cs" />
+    <Compile Include="Engine\BaseModelAction.cs" />
+    <Compile Include="Engine\BaseModel.cs" />
+    <Compile Include="Engine\ModelValidator.cs" />
+    <Compile Include="Engine\StateMachine.cs" />
+    <Compile Include="Engine\StateMachineExtensions.cs" />
+    <Compile Include="Engine\StateMachineTransition.cs" />
+    <Compile Include="Engine\StateMachineBuilder.cs" />
+    <Compile Include="Engine\StateMachineValidator.cs" />
+    <Compile Include="Engine\UseValidationFromBehaviourAttribute.cs" />
+    <Compile Include="Engine\UseValidationFromModelAttribute.cs" />
+    <Compile Include="Message.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Message.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Constants\Model.cs" />
+    <Compile Include="Domain\Catalogue\OrderItem.cs" />
+    <Compile Include="Domain\Catalogue\CartItem.cs" />
+    <Compile Include="Domain\Catalogue\Catalogue.cs" />
+    <Compile Include="Domain\Catalogue\CatalogueItem.cs" />
+    <Compile Include="Domain\Catalogue\Blueprint.cs" />
+    <Compile Include="Domain\Inventory\Action.cs" />
+    <Compile Include="Domain\Inventory\Attribute.cs" />
+    <Compile Include="Engine\AttributeNameAttribute.cs" />
+    <Compile Include="Engine\AttributeBaseDto.cs" />
+    <Compile Include="Domain\Inventory\ModelAction.cs" />
+    <Compile Include="Domain\Inventory\ModelAttribute.cs" />
+    <Compile Include="Domain\Inventory\Behaviour.cs" />
+    <Compile Include="Domain\Inventory\Model.cs" />
+    <Compile Include="Domain\Security\Acl.cs" />
+    <Compile Include="Domain\Security\AuditTrail.cs" />
+    <Compile Include="Domain\Security\ItemAce.cs" />
+    <Compile Include="Domain\Inventory\Connection.cs" />
+    <Compile Include="Domain\PublicEntity.cs" />
+    <Compile Include="Domain\Inventory\ItemJob.cs" />
+    <Compile Include="Domain\Identity\Customer.cs" />
+    <Compile Include="Domain\Configuration\ManagementCredential.cs" />
+    <Compile Include="Domain\Configuration\ManagementCredentialType.cs" />
+    <Compile Include="Domain\Configuration\ManagementUri.cs" />
+    <Compile Include="Domain\Configuration\ManagementUriType.cs" />
+    <Compile Include="Domain\Inventory\Item.cs" />
+    <Compile Include="Domain\Security\Permission.cs" />
+    <Compile Include="Domain\Security\PermissionType.cs" />
+    <Compile Include="Domain\Configuration\VolatileKeyNameValue.cs" />
+    <Compile Include="Domain\Inventory\Folder.cs" />
+    <Compile Include="Domain\Inventory\View.cs" />
+    <Compile Include="OdataServices\IOdataController.cs" />
+    <Compile Include="Odata\EntitySetUtilities.cs" />
+    <Compile Include="Test\ContractClassForITestCodeContracts.cs" />
+    <Compile Include="Test\TestModel2.cs" />
+    <Compile Include="Test\TestModel1.cs" />
+    <Compile Include="Test\TestModel3.cs" />
+    <Compile Include="Test\TestModel4.cs" />
+    <Compile Include="Test\TestModel5.cs" />
+    <Compile Include="Test\TestModel6.cs" />
+    <Compile Include="Test\TestModel7.cs" />
+    <Compile Include="Test\TestModel8.cs" />
+    <Compile Include="Test\TestModel9.cs" />
+    <Compile Include="Types\Boxed.cs" />
+    <Compile Include="Types\BoxedBool.cs" />
+    <Compile Include="Types\BoxedLong.cs" />
+    <Compile Include="Types\BoxedInt.cs" />
+    <Compile Include="Types\BoxedString.cs" />
+    <Compile Include="Types\BoxedT.cs" />
+    <Compile Include="Types\NameValuePairBase.cs" />
+    <Compile Include="Types\NameValuePairT.cs" />
+    <Compile Include="Validation\PublicEntityValidator.cs" />
+    <Compile Include="Validation\PublicEntityValidatorExtensions.cs" />
+    <Compile Include="Validation\ContractClassForIPublicEntityValidator.cs" />
+    <Compile Include="Validation\IPublicEntityValidator.cs" />
+    <Compile Include="Domain\Configuration\KeyNameValue.cs" />
+    <Compile Include="Domain\Identity\Tenant.cs" />
+    <Compile Include="Domain\Identity\User.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\ITestCodeContracts.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dfch.pfx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Message.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Message.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
