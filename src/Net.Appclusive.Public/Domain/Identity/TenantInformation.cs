@@ -14,11 +14,30 @@
  * limitations under the License.
  */
 
+using System;
+using System.Collections.Generic;
+using Net.Appclusive.Public.Security;
+
 namespace Net.Appclusive.Public.Domain.Identity
 {
     public class TenantInformation
     {
+        public Guid Id { get; set; }
+
+        public Guid ParentId { get; set; }
+
+        public long CustomerId { get; set; }
+
+        public long ConfigurationId { get; set; }
+
+        public BuiltInRoles BuiltInRoles { get; set; }
+
+        public long ItemJobId { get; set; }
+
         public long ItemId { get; set; }
+
         public long AclId { get; set; }
+
+        public Dictionary<string, long> CreatorOwnerRightMap { get; set; }
     }
 }

@@ -27,11 +27,23 @@ namespace Net.Appclusive.Public.Constants
         public static class RoleId
         {
             public const long UBER_ADMIN = 1;
+            public const long GLOBAL_EVERYONE = 2;
         }
 
         public static class RoleName
         {
-            public const string UBER_ADMIN = nameof(UBER_ADMIN);
+            // ReSharper disable InconsistentNaming
+            public const string UberAdmin = nameof(UberAdmin);
+            public const string GlobalEveryone = nameof(GlobalEveryone);
+
+            public const string TenantAdmin = nameof(TenantAdmin);
+            public const string TenantUser = nameof(TenantUser);
+            public const string TenantGuest = nameof(TenantGuest);
+            public const string CreatorOwner = nameof(CreatorOwner);
+            public const string Everyone = nameof(Everyone);
+            public const string ParentTenant = nameof(ParentTenant);
+            public const string ChildTenants = nameof(ChildTenants);
+            // ReSharper restore InconsistentNaming
         }
 
         public static class PermissionId
