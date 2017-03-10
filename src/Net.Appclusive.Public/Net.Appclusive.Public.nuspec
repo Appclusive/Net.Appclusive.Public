@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Net.Appclusive.Public</id>
+        <version>4.0.0</version>
+        <title>Net.CS.Appclusive.Public</title>
+        <authors>d-fens GmbH</authors>
+        <owners>d-fens GmbH</owners>
+		    <licenseUrl>https://github.com/Appclusive/Net.Appclusive.Public/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/Appclusive/Net.Appclusive.Public</projectUrl>
+        <iconUrl>https://pbs.twimg.com/profile_images/840200137926463488/Cm57VV2t_400x400.jpg</iconUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>Net.Appclusive.Public
+========================
+
+Interfaces, DTOs and Constants for Appclusive Blueprint Modelling and Automation Engine
+		</description>
+        <summary>Interfaces, DTOs and Constants for Appclusive Blueprint Modelling and Automation Engine</summary>
+        <releaseNotes>20170310
+Initial release
+        </releaseNotes>
+        <copyright>Copyright © 2013-2017 d-fens GmbH</copyright>
+        <tags>dfch Appclusive C#</tags>
+        <dependencies>
+			<package id="biz.dfch.CS.Commons" version="1.12.0" />
+			<package id="DotNet.Contracts" version="1.10.20606.1" />
+			<package id="Newtonsoft.Json" version="9.0.1" />
+			<package id="System.ComponentModel.Annotations" version="4.3.0" />
+        </dependencies>
+    </metadata>
+	<files>
+		<file src="bin\Release\Net.Appclusive.Public.dll" target="lib\" />
+		<file src="bin\Release\CodeContracts\Net.Appclusive.Public.Contracts.dll" target="lib\CodeContracts" />
+	</files>
+</package>
