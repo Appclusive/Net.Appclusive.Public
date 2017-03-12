@@ -40,20 +40,6 @@ namespace Net.Appclusive.Public.Constants
             Exception = int.MaxValue
         }
 
-        public enum WorkflowEngineEventId : int
-        {
-            Default = 0,
-
-            MissingInput,
-            Aborted,
-            Completed,
-
-            Stop = int.MaxValue - 2,
-            Start = int.MaxValue - 1,
-
-            Exception = int.MaxValue
-        }
-
         public enum ProductEngineEventId : int
         {
             Default = 0,

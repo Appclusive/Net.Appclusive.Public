@@ -27,5 +27,21 @@ namespace Net.Appclusive.Public.Constants
         public const string BUILD_MODEL_PARENT_ITEM_ID_IN_ARGUMENT = "ParentItemId";
         public const string BUILD_MODEL_MODEL_NAME_IN_ARGUMENT = "ModelName";
         public const string BUILD_MODEL_CONFIGURATION_IN_ARGUMENT = "Configuration";
+
+        public static class EventId
+        {
+            // ReSharper disable InconsistentNaming
+            public const int Default = 0;
+
+            public const int MissingInput = 1;
+            public const int Aborted = 2;
+            public const int Completed = 3;
+            public const int ProcessBookmarkFailed = 4;
+
+            public const int Stop = int.MaxValue - 2;
+            public const int Start = int.MaxValue - 1;
+            public const int Exception = int.MaxValue;
+            // ReSharper restore InconsistentNaming
+        }
     }
 }
