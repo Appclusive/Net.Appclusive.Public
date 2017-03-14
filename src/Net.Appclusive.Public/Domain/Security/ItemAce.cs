@@ -16,7 +16,6 @@
 
 using System.ComponentModel.DataAnnotations;
 using Net.Appclusive.Public.Domain.Identity;
-using Net.Appclusive.Public.Domain.Inventory;
 using Newtonsoft.Json;
 
 namespace Net.Appclusive.Public.Domain.Security
