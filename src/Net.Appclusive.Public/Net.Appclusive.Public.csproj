@@ -145,7 +145,6 @@
     </Compile>
     <Compile Include="Constants\HealthCheckSettings.cs" />
     <Compile Include="Constants\Data.cs" />
-    <Compile Include="Constants\Messaging.cs" />
     <Compile Include="Constants\Security.cs" />
     <Compile Include="Constants\Workflow.cs" />
     <Compile Include="Domain\Diagnostics\CacheItem.cs" />
@@ -159,12 +158,6 @@
     <Compile Include="Domain\TenantDetails.cs" />
     <Compile Include="Domain\Inventory\ModelItem.cs" />
     <Compile Include="Linq\ExpressionExtensions.cs" />
-    <Compile Include="Messaging\BuildModelMessageBody.cs" />
-    <Compile Include="Messaging\ContractClassForIMessagingClient.cs" />
-    <Compile Include="Messaging\DefaultMessageHeader.cs" />
-    <Compile Include="Messaging\IMessagingClient.cs" />
-    <Compile Include="Messaging\Message.cs" />
-    <Compile Include="Messaging\MessageQueue.cs" />
     <Compile Include="Security\BuiltInRoles.cs" />
     <Compile Include="Security\Permission.cs" />
     <Compile Include="Types\BoxedLambdaExpression.cs" />

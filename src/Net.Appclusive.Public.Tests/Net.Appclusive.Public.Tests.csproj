@@ -174,7 +174,6 @@
     <Compile Include="Engine\StateMachineValidatorTest.cs" />
     <Compile Include="Domain\PublicEntityTest.cs" />
     <Compile Include="Engine\AttributeBaseDtoTest.cs" />
-    <Compile Include="Messaging\MessageTest.cs" />
     <Compile Include="Odata\EntitySetUtilitiesTest.cs" />
     <Compile Include="Resource.Designer.cs">
       <AutoGen>True</AutoGen>
