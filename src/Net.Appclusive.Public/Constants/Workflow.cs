@@ -24,12 +24,6 @@ namespace Net.Appclusive.Public.Constants
 
         public const string WORKFLOW_ASSEMBLY_NAMESPACE_PREFIX = "Net.Appclusive.Workflows";
 
-        public const string BUILD_MODEL_ACTIVITY = "BuildModel";
-
-        public const string BUILD_MODEL_PARENT_ITEM_ID_IN_ARGUMENT = "ParentItemId";
-        public const string BUILD_MODEL_MODEL_NAME_IN_ARGUMENT = "ModelName";
-        public const string BUILD_MODEL_CONFIGURATION_IN_ARGUMENT = "Configuration";
-
         public static class EventId
         {
             // ReSharper disable InconsistentNaming
