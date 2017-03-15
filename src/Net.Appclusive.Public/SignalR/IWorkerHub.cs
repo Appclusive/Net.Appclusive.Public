@@ -14,8 +14,11 @@
  * limitations under the License.
  */
 
+using System.Diagnostics.Contracts;
+
 namespace Net.Appclusive.Public.SignalR
 {
+    [ContractClass(typeof(ContractClassForIWorkerHub))]
     public interface IWorkerHub
     {
         void NotifyServer(string message);
