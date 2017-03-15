@@ -160,9 +160,9 @@
     <Compile Include="Linq\ExpressionExtensions.cs" />
     <Compile Include="Security\BuiltInRoles.cs" />
     <Compile Include="Security\Permission.cs" />
-    <Compile Include="SignalR\ContractClassForIWorker.cs" />
+    <Compile Include="SignalR\ContractClassForIWorkerClient.cs" />
     <Compile Include="SignalR\ContractClassForIWorkerHub.cs" />
-    <Compile Include="SignalR\IWorker.cs" />
+    <Compile Include="SignalR\IWorkerClient.cs" />
     <Compile Include="SignalR\IWorkerHub.cs" />
     <Compile Include="Types\BoxedLambdaExpression.cs" />
     <Compile Include="Types\IdNameDescriptionTuple.cs" />

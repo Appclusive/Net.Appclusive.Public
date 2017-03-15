@@ -18,9 +18,12 @@ using System.Diagnostics.Contracts;
 
 namespace Net.Appclusive.Public.SignalR
 {
-    [ContractClass(typeof(ContractClassForIWorker))]
-    public interface IWorker
+    [ContractClassFor(typeof(IWorkerClient))]
+    public abstract class ContractClassForIWorkerClient : IWorkerClient
     {
-        void ProcessWorkItem(string workItem);
+        public void ProcessWorkItem(string workItem)
+        {
+            Contract.Requires(!string.IsNullOrWhiteSpace(workItem));
+        }
     }
 }
