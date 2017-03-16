@@ -23,8 +23,6 @@ namespace Net.Appclusive.Public.Domain.Catalogue
     public class Blueprint : PublicEntity
     {
         [Required]
-        public string Value { get; set; }
-        [Required]
         public long ModelId { get; set; }
 
         [JsonIgnore]
