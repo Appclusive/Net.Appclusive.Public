@@ -32,6 +32,7 @@ namespace Net.Appclusive.Public.Constants
         public const long tenantCacheManagerSettingsTimeout = DEFAULT_TIMEOUT;
         public const long roleCacheManagerSettingsTimeout = 5 * DEFAULT_TIMEOUT;
         public const long rightCacheManagerSettingsTimeout = 5 * DEFAULT_TIMEOUT;
+        public const long workflowCacheManagerSettingsTimeout = 30 * 60;
         // ReSharper restore InconsistentNaming
     }
 }
