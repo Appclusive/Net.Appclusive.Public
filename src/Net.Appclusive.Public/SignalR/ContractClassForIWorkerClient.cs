@@ -15,15 +15,21 @@
  */
 
 using System.Diagnostics.Contracts;
+using Net.Appclusive.Public.Domain.General;
 
 namespace Net.Appclusive.Public.SignalR
 {
     [ContractClassFor(typeof(IWorkerClient))]
     public abstract class ContractClassForIWorkerClient : IWorkerClient
     {
-        public void ProcessWorkItem(string workItem)
+        public void ProcessMessage(string value)
         {
-            Contract.Requires(!string.IsNullOrWhiteSpace(workItem));
+            Contract.Requires(!string.IsNullOrWhiteSpace(value));
+        }
+
+        public void ProcessWorkItem(WorkItem workItem)
+        {
+            Contract.Requires(null != workItem);
         }
     }
 }
