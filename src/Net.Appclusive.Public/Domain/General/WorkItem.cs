@@ -21,9 +21,6 @@ namespace Net.Appclusive.Public.Domain.General
     public class WorkItem : PublicEntity
     {
         [Required]
-        public string Type { get; set; }
-
-        [Required]
         public string Parameters { get; set; }
     }
 }
