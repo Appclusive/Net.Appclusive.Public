@@ -15,12 +15,15 @@
  */
 
 using System.Diagnostics.Contracts;
+using Net.Appclusive.Public.Domain.General;
 
 namespace Net.Appclusive.Public.SignalR
 {
     [ContractClass(typeof(ContractClassForIWorkerClient))]
     public interface IWorkerClient
     {
-        void ProcessWorkItem(string workItem);
+        void ProcessMessage(string value);
+
+        void ProcessWorkItem(WorkItem workItem);
     }
 }
