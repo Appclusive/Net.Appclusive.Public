@@ -156,6 +156,7 @@
     <Compile Include="Domain\Catalogue\Cart.cs" />
     <Compile Include="Domain\Diagnostics\HealthCheck.cs" />
     <Compile Include="Domain\General\Job.cs" />
+    <Compile Include="Domain\Security\Authentication.cs" />
     <Compile Include="Domain\Security\ItemAcl.cs" />
     <Compile Include="Domain\TenantDetails.cs" />
     <Compile Include="Domain\Inventory\ModelItem.cs" />
