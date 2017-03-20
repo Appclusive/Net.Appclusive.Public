@@ -148,6 +148,7 @@
     <Compile Include="Constants\Security.cs" />
     <Compile Include="Constants\Workflow.cs" />
     <Compile Include="Domain\Diagnostics\CacheItem.cs" />
+    <Compile Include="Domain\Diagnostics\WorkflowInstance.cs" />
     <Compile Include="Domain\General\WorkItem.cs" />
     <Compile Include="Domain\Identity\TenantInformation.cs" />
     <Compile Include="Domain\PublicEntityDetails.cs" />
