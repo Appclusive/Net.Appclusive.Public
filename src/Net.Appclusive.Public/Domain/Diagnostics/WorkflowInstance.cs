@@ -27,7 +27,7 @@ namespace Net.Appclusive.Public.Domain.Diagnostics
         [Required]
         public long SurrogateInstanceId { get; set; }
 
-        public long SurrogateLockOwnerId { get; set; }
+        public long? SurrogateLockOwnerId { get; set; }
 
         public string PrimitiveDataProperties { get; set; }
 
@@ -39,18 +39,18 @@ namespace Net.Appclusive.Public.Domain.Diagnostics
 
         public string MetadataProperties { get; set; }
 
-        public int DataEncodingOption { get; set; }
+        public bool DataEncodingOption { get; set; }
 
-        public int MetadataEncodingOption { get; set; }
+        public bool MetadataEncodingOption { get; set; }
 
         [Required]
         public long Version { get; set; }
 
-        public DateTimeOffset PendingTimer { get; set; }
+        public DateTimeOffset? PendingTimer { get; set; }
 
         public Guid WorkflowHostType { get; set; }
 
-        public long ServiceDeploymentId { get; set; }
+        public long? ServiceDeploymentId { get; set; }
 
         public string SuspensionExceptionName { get; set; }
 
