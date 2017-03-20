@@ -21,5 +21,6 @@ namespace Net.Appclusive.Public.Constants
         public const string BAD_REQUEST = "|400|";
         public const string FORBIDDEN = "|403|";
         public const string NOT_FOUND = "|404|";
+        public const string UNAUTHORIZED = "|401|";
     }
 }

@@ -38,5 +38,18 @@ namespace Net.Appclusive.Public.Constants
             public const bool oAuth2Authentication = true;
             // ReSharper restore InconsistentNaming
         }
+
+        public static class Header
+        {
+            public const string AUTHORIZATION = "Authorization";
+            public const string TENANT_ID = "TenantId";
+        }
+
+        public static class Scheme
+        {
+            public const string BASIC = "Basic";
+            public const string BEARER = "Bearer";
+            public const string NEGOTIATE = "Negotiate";
+        }
     }
 }
