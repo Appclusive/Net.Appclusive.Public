@@ -34,6 +34,7 @@ namespace Net.Appclusive.Public.Constants
         public const long rightCacheManagerSettingsTimeout = 5 * DEFAULT_TIMEOUT;
         public const long workflowCacheManagerSettingsTimeout = 30 * 60;
         public const long directoryServicesCredentialValidatorCacheManagerSettingsTimeout = 24 * 60 * 60;
+        public const long authenticationCacheManagerSettingsTimeout = 60 * 60;
         // ReSharper restore InconsistentNaming
     }
 }
