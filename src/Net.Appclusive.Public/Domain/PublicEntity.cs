@@ -37,7 +37,7 @@ namespace Net.Appclusive.Public.Domain
             where T : PublicEntity 
             => MemberwiseClone() as T;
 
-        public void SetBaseEntityDefaults()
+        public virtual PublicEntity SetBaseEntityDefaults()
         {
             Id = 0;
             Name = nameof(Name);
@@ -47,6 +47,14 @@ namespace Net.Appclusive.Public.Domain
             Details.ModifiedById = 1;
             Details.Created = DateTimeOffset.Now;
             Details.Modified = Details.Created;
+
+            return this;
+        }
+
+        public virtual TPublicEntity Cast<TPublicEntity>()
+            where TPublicEntity : PublicEntity
+        {
+            return this as TPublicEntity;
         }
     }
 }
