@@ -68,6 +68,7 @@ namespace Net.Appclusive.Public.Constants
         public static class TraceSourceName
         {
             public const string APPCLUSIVE_CORE = "Net.Appclusive.Core";
+            public const string AUTHENTICATION = "Net.Appclusive.Core.Security.Authentication";
             public const string CACHE_MANAGER = "Net.Appclusive.Core.Cache.CacheManager";
             public const string WORKFLOW_ENGINE = "Net.Appclusive.Internal.Workflow";
             public const string ENGINE = "Net.Appclusive.Public.Engine";
