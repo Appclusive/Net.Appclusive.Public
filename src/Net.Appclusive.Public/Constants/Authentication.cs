@@ -23,5 +23,20 @@ namespace Net.Appclusive.Public.Constants
             public const string INTERNAL = "Internal";
             public const string IMPERSONATED = "Impersonated";
         }
+
+        public static class AuthenticationFilter
+        {
+            public const string SECTION_NAME = "authenticationManagerConfigurationSection";
+
+            // we use lower camel case for these constants as they are used as XML attributes 
+            // inside app.configconfiguration section
+
+            // ReSharper disable InconsistentNaming
+            public const bool localMachineAuthentication = false;
+            public const bool activeDirectoryAuthentication = false;
+            public const bool azureAuthentiation = true;
+            public const bool oAuth2Authentication = true;
+            // ReSharper restore InconsistentNaming
+        }
     }
 }
