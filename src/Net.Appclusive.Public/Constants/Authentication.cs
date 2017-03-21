@@ -20,6 +20,7 @@ namespace Net.Appclusive.Public.Constants
     {
         public static class Type
         {
+            public const string INTEGRATED = "Integrated";
             public const string INTERNAL = "Internal";
             public const string IMPERSONATED = "Impersonated";
         }
