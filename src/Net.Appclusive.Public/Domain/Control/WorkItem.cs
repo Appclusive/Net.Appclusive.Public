@@ -16,15 +16,11 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Net.Appclusive.Public.Domain.General
+namespace Net.Appclusive.Public.Domain.Control
 {
-    public class Job : PublicEntity
+    public class WorkItem : PublicEntity
     {
         [Required]
-        public string Status { get; set; }
-
-        public string Action { get; set; }
-
-        public string ActionParameters { get; set; }
+        public string Parameters { get; set; }
     }
 }

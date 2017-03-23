@@ -15,7 +15,7 @@
  */
 
 using System.Diagnostics.Contracts;
-using Net.Appclusive.Public.Domain.General;
+using Net.Appclusive.Public.Domain.Control;
 
 namespace Net.Appclusive.Public.SignalR
 {
