@@ -16,28 +16,19 @@
 
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Net.Appclusive.Public.Domain.General;
-using Net.Appclusive.Public.Types;
+using Net.Appclusive.Public.Domain.Control;
 using Newtonsoft.Json;
 
 namespace Net.Appclusive.Public.Domain.Catalogue
 {
-    public class OrderItem : PublicEntity
+    public class Order : PublicEntity
     {
-        [Required]
-        public long OrderId { get; set; }
-
         [JsonIgnore]
-        public virtual Order Order { get; set; }
+        public virtual ICollection<OrderItem> OrderItems { get; set; }
 
         [Required]
         public long JobId { get; set; }
 
         public virtual Job Job { get; set; }
-
-        [Required]
-        public long BlueprintId { get; set; }
-
-        public virtual ICollection<IdValuePair> Configuration { get; set; }
     }
 }

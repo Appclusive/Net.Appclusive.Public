@@ -14,13 +14,30 @@
  * limitations under the License.
  */
 
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Net.Appclusive.Public.Domain.Control;
+using Net.Appclusive.Public.Types;
+using Newtonsoft.Json;
 
-namespace Net.Appclusive.Public.Domain.General
+namespace Net.Appclusive.Public.Domain.Catalogue
 {
-    public class WorkItem : PublicEntity
+    public class OrderItem : PublicEntity
     {
         [Required]
-        public string Parameters { get; set; }
+        public long OrderId { get; set; }
+
+        [JsonIgnore]
+        public virtual Order Order { get; set; }
+
+        [Required]
+        public long JobId { get; set; }
+
+        public virtual Job Job { get; set; }
+
+        [Required]
+        public long BlueprintId { get; set; }
+
+        public virtual ICollection<IdValuePair> Configuration { get; set; }
     }
 }

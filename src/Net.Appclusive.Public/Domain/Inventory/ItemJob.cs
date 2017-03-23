@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-using Net.Appclusive.Public.Domain.General;
+using Net.Appclusive.Public.Domain.Control;
 
 namespace Net.Appclusive.Public.Domain.Inventory
 {

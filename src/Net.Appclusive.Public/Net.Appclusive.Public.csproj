@@ -150,13 +150,13 @@
     <Compile Include="Domain\Control\Approval.cs" />
     <Compile Include="Domain\Diagnostics\CacheItem.cs" />
     <Compile Include="Domain\Diagnostics\WorkflowInstance.cs" />
-    <Compile Include="Domain\General\WorkItem.cs" />
+    <Compile Include="Domain\Control\WorkItem.cs" />
     <Compile Include="Domain\Identity\TenantInformation.cs" />
     <Compile Include="Domain\PublicEntityDetails.cs" />
-    <Compile Include="Domain\Catalogue\Order.cs" />
-    <Compile Include="Domain\Catalogue\Cart.cs" />
+    <Compile Include="Domain\Order\Order.cs" />
+    <Compile Include="Domain\Order\Cart.cs" />
     <Compile Include="Domain\Diagnostics\HealthCheck.cs" />
-    <Compile Include="Domain\General\Job.cs" />
+    <Compile Include="Domain\Control\Job.cs" />
     <Compile Include="Domain\Security\Authentication.cs" />
     <Compile Include="Domain\Security\ItemAcl.cs" />
     <Compile Include="Domain\TenantDetails.cs" />
@@ -226,11 +226,11 @@
       <DependentUpon>Message.resx</DependentUpon>
     </Compile>
     <Compile Include="Constants\Model.cs" />
-    <Compile Include="Domain\Catalogue\OrderItem.cs" />
-    <Compile Include="Domain\Catalogue\CartItem.cs" />
-    <Compile Include="Domain\Catalogue\Catalogue.cs" />
-    <Compile Include="Domain\Catalogue\CatalogueItem.cs" />
-    <Compile Include="Domain\Catalogue\Blueprint.cs" />
+    <Compile Include="Domain\Order\OrderItem.cs" />
+    <Compile Include="Domain\Order\CartItem.cs" />
+    <Compile Include="Domain\Order\Catalogue.cs" />
+    <Compile Include="Domain\Order\CatalogueItem.cs" />
+    <Compile Include="Domain\Order\Blueprint.cs" />
     <Compile Include="Domain\Inventory\Action.cs" />
     <Compile Include="Domain\Inventory\Attribute.cs" />
     <Compile Include="Engine\AttributeNameAttribute.cs" />
