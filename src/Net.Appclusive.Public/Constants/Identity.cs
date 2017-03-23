@@ -24,6 +24,11 @@ namespace Net.Appclusive.Public.Constants
         {
             public const long SYSTEM_USER_ID = 1;
             public const string SYSTEM_USER_NAME = "SYSTEM";
+
+            public static class MappedType
+            {
+                public const string INTEGRATED = "Integrated";
+            }
         }
 
         public static class Tenant

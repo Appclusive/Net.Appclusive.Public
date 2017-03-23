@@ -23,7 +23,9 @@ namespace Net.Appclusive.Public.Constants
 
         public static class Type
         {
-            public const string INTEGRATED = "Integrated";
+            public const string BASIC = "Basic";
+            public const string BEARER = "Bearer";
+            public const string NEGOTIATE = "Negotiate";
             public const string INTERNAL = "Internal";
             public const string IMPERSONATED = "Impersonated";
         }
@@ -47,13 +49,6 @@ namespace Net.Appclusive.Public.Constants
         {
             public const string AUTHORIZATION = "Authorization";
             public const string TENANT_ID = "TenantId";
-        }
-
-        public static class Scheme
-        {
-            public const string BASIC = "Basic";
-            public const string BEARER = "Bearer";
-            public const string NEGOTIATE = "Negotiate";
         }
     }
 }
