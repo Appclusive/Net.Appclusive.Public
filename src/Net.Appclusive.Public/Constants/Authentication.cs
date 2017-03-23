@@ -18,8 +18,12 @@ namespace Net.Appclusive.Public.Constants
 {
     public static class Authentication
     {
+        public const string ENCODING = "iso-8859-1";
+        public const char BASIC_AUTHORIZATION_SEPARATOR = ':';
+
         public static class Type
         {
+            public const string INTEGRATED = "Integrated";
             public const string INTERNAL = "Internal";
             public const string IMPERSONATED = "Impersonated";
         }
