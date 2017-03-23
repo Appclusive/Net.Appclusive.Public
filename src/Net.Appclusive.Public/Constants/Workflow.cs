@@ -20,7 +20,7 @@ namespace Net.Appclusive.Public.Constants
     {
         public const string WORKFLOW_MANAGER_CONFIGURATION_SECTION_NAME = "workflowManagerConfiguration";
 
-        public const string DEFAULT_TRACKING_PARTICIPANT = "Net.Appclusive.Core.Workflow.BlueprintTrackingParticipant";
+        public const string DEFAULT_TRACKING_PARTICIPANT = "Net.Appclusive.Core.Workflow.AppclusiveTrackingParticipant";
 
         public const string WORKFLOW_ASSEMBLY_NAMESPACE_PREFIX = "Net.Appclusive.Workflows";
 
