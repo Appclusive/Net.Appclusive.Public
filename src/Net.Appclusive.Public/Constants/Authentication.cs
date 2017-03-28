@@ -50,5 +50,12 @@ namespace Net.Appclusive.Public.Constants
             public const string AUTHORIZATION = "Authorization";
             public const string TENANT_ID = "TenantId";
         }
+
+        public static class JwtKey
+        {
+            public const string UPN = "upn";
+            public const string EXPIRATION = "exp";
+            public const string ISSUER = "iss";
+        }
     }
 }
