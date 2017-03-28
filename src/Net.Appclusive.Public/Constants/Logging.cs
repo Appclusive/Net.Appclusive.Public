@@ -74,6 +74,7 @@ namespace Net.Appclusive.Public.Constants
             public const string ENGINE = "Net.Appclusive.Public.Engine";
             public const string WEB_API = "Net.Appclusive.WebApi";
             public const string ACCESS_MANAGER = "Net.Appclusive.Core.Security.AccessManager";
+            public const string DOMAIN_CONTROL = "Net.Appclusive.Core.Control";
         }
     }
 }

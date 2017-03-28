@@ -165,6 +165,7 @@
     <Compile Include="..\CommonAssemblySettings.cs">
       <Link>Properties\CommonAssemblySettings.cs</Link>
     </Compile>
+    <Compile Include="Domain\Control\ApprovalsTest.cs" />
     <Compile Include="Engine\BehaviourManagerTest.cs" />
     <Compile Include="Engine\ConnectionConstraintForAttributeTest.cs" />
     <Compile Include="Engine\ConnectionToAttributeTest.cs" />

@@ -143,11 +143,15 @@
     <Compile Include="..\CommonAssemblySettings.cs">
       <Link>Properties\CommonAssemblySettings.cs</Link>
     </Compile>
+    <Compile Include="Constants\Approval.cs" />
     <Compile Include="Constants\HealthCheckSettings.cs" />
     <Compile Include="Constants\Data.cs" />
     <Compile Include="Constants\Security.cs" />
     <Compile Include="Constants\Workflow.cs" />
     <Compile Include="Domain\Control\Approval.cs" />
+    <Compile Include="Domain\Control\Approvals.cs" />
+    <Compile Include="Domain\Control\ApprovalType.cs" />
+    <Compile Include="Domain\Control\ApprovalAttribute.cs" />
     <Compile Include="Domain\Diagnostics\CacheItem.cs" />
     <Compile Include="Domain\Diagnostics\WorkflowInstance.cs" />
     <Compile Include="Domain\Control\WorkItem.cs" />

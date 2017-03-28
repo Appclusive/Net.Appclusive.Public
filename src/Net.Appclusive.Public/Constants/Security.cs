@@ -17,6 +17,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace Net.Appclusive.Public.Constants
 {
@@ -60,6 +61,15 @@ namespace Net.Appclusive.Public.Constants
             public const string GENERIC_READ = nameof(GENERIC_READ);
             public const string GENERIC_WRITE = nameof(GENERIC_WRITE);
             public const string GENERIC_DELETE = nameof(GENERIC_DELETE);
+
+            // ReSharper disable InconsistentNaming
+            public const string ApprovalCanCreate = nameof(ApprovalCanCreate);
+            public const string ApprovalCanRead = nameof(ApprovalCanRead);
+            public const string ApprovalCanUpdate = nameof(ApprovalCanUpdate);
+            public const string ApprovalCanDelete = nameof(ApprovalCanDelete);
+            [Description("Trustee can approve or decline an Approval")]
+            public const string ApprovalCanProcess = nameof(ApprovalCanProcess);
+            // ReSharper restore InconsistentNaming
         }
 
         public static class RightId
