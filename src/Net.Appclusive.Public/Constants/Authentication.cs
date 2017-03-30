@@ -39,10 +39,11 @@ namespace Net.Appclusive.Public.Constants
             // inside app.configconfiguration section
 
             // ReSharper disable InconsistentNaming
-            public const bool localMachineAuthentication = false;
-            public const bool activeDirectoryAuthentication = false;
-            public const bool azureAuthentication = true;
-            public const bool oAuth2Authentication = true;
+            public const bool basicAuthentication = true;
+            public const bool negotiateAuthentication = true;
+            public const bool bearerAuthentication = true;
+            public const bool systemUserAuthentication = false;
+            public const bool testAuthentication = false;
             // ReSharper restore InconsistentNaming
         }
 
