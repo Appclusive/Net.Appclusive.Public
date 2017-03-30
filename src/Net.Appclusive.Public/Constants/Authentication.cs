@@ -20,6 +20,7 @@ namespace Net.Appclusive.Public.Constants
     {
         public const string ENCODING = "iso-8859-1";
         public const char BASIC_AUTHORIZATION_SEPARATOR = ':';
+        public const string JWT_VALIDATOR_CONFIG_SECTION_NAME = "jwtValidatorConfiguration";
 
         public static class Type
         {

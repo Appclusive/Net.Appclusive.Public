@@ -24,6 +24,8 @@ namespace Net.Appclusive.Public.Constants
         {
             public const long SYSTEM_USER_ID = 1;
             public const string SYSTEM_USER_NAME = "SYSTEM";
+            public const string AT_SIGN = "@";
+            public const string APPCLUSIVE_EMAIL_SUFFIX = "@appclusive.net";
 
             public static class MappedType
             {
