@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-using System;
 using System.ComponentModel.DataAnnotations;
 using biz.dfch.CS.Commons.Converters;
 
