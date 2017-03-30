@@ -32,7 +32,7 @@ namespace Net.Appclusive.Public.Constants
 
         public static class AuthenticationFilter
         {
-            public const string SECTION_NAME = "authenticationManagerConfigurationSection";
+            public const string SECTION_NAME = "authenticationManagerConfiguration";
 
             // we use lower camel case for these constants as they are used as XML attributes 
             // inside app.configconfiguration section
