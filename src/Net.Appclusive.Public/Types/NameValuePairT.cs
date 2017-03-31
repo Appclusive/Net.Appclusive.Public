@@ -16,6 +16,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Net.Appclusive.Public.Types
 {
@@ -49,6 +50,7 @@ namespace Net.Appclusive.Public.Types
             return string.Format(TOSTRING_FORMAT, null != Name ? Name.ToString() : string.Empty, null != Value ? Value.ToString() : string.Empty);
         }
 
+        [Key]
         public TName Name { get; set; }
 
         public TValue Value { get; set; }
