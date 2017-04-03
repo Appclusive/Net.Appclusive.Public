@@ -177,4 +177,10 @@
   <data name="ModelValidator__Missing_Attribute" xml:space="preserve">
     <value>{0}: Attribute '{1}' from behaviourDefinition '{2}' has not been implemented or can be derived.</value>
   </data>
+  <data name="ApprovalBase_ValidateInstance__InvalidCombinationRoleIdUserId" xml:space="preserve">
+    <value>You must either specify RoleId or UserId.</value>
+  </data>
+  <data name="ApprovalBase_ValidateInstance__InvalidCombinationAbsoluteExpirationRelativeExpiration" xml:space="preserve">
+    <value>You must either specify AbsoluteExpiration or RelativeExpiration.</value>
+  </data>
 </root>

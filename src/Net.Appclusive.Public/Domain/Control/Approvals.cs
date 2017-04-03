@@ -15,15 +15,21 @@
  */
 
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using biz.dfch.CS.Commons.Converters;
+using biz.dfch.CS.Commons.Linq;
+using System.Diagnostics.Contracts;
 
 namespace Net.Appclusive.Public.Domain.Control
 {
     public class Approvals
     {
-        public abstract class ApprovalBase : ConvertibleBaseDto
+        public class ApprovalBase : ConvertibleBaseDto
         {
+            private const string SEPARATOR = ", ";
+
             [Approval(Constants.Approval.Approval0.RoleId)]
             [Range(0, long.MaxValue)]
             public virtual long RoleId { get; set; }
@@ -40,6 +46,48 @@ namespace Net.Appclusive.Public.Domain.Control
 
             [Approval(Constants.Approval.Approval0.RelativeExpiration)]
             public virtual long RelativeExpiration { get; set; }
+
+            public override bool IsValid()
+            {
+                return !GetValidationResults().Any();
+            }
+
+            public override IList<ValidationResult> GetValidationResults()
+            {
+                var result = ValidateInstance();
+
+                base.GetValidationResults().ForEach(result.Add);
+
+                return result;
+            }
+
+            public override IList<string> GetErrorMessages()
+            {
+                return GetValidationResults().Select(e => e.ErrorMessage).ToList();
+            }
+
+            public override void Validate()
+            {
+                var result = GetErrorMessages();
+                Contract.Assert(!result.Any(), string.Join(SEPARATOR, result));
+            }
+
+            private IList<ValidationResult> ValidateInstance()
+            {
+                var result = new List<ValidationResult>();
+
+                if (0 >= RoleId && 0 >= UserId)
+                {
+                    result.Add(new ValidationResult(Message.ApprovalBase_ValidateInstance__InvalidCombinationRoleIdUserId, new [] { nameof(RoleId), nameof(UserId) } ));
+                }
+
+                if (0 >= AbsoluteExpiration && 0 >= RelativeExpiration)
+                {
+                    result.Add(new ValidationResult(Message.ApprovalBase_ValidateInstance__InvalidCombinationAbsoluteExpirationRelativeExpiration, new [] { nameof(AbsoluteExpiration), nameof(RelativeExpiration) } ));
+                }
+
+                return result;
+            }
         }
 
         public sealed class Approval0 : ApprovalBase

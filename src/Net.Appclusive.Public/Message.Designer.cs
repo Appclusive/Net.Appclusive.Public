@@ -61,6 +61,25 @@ namespace Net.Appclusive.Public {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You must either specify AbsoluteExpiration or RelativeExpiration..
+        /// </summary>
+        internal static string ApprovalBase_ValidateInstance__InvalidCombinationAbsoluteExpirationRelativeExpiration {
+            get {
+                return ResourceManager.GetString("ApprovalBase_ValidateInstance__InvalidCombinationAbsoluteExpirationRelativeExpira" +
+                        "tion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must either specify RoleId or UserId..
+        /// </summary>
+        internal static string ApprovalBase_ValidateInstance__InvalidCombinationRoleIdUserId {
+            get {
+                return ResourceManager.GetString("ApprovalBase_ValidateInstance__InvalidCombinationRoleIdUserId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0}: Attribute &apos;{1}&apos; from behaviourDefinition &apos;{2}&apos; has not been implemented or can be derived..
         /// </summary>
         internal static string ModelValidator__Missing_Attribute {
