@@ -36,6 +36,7 @@ namespace Net.Appclusive.Public.Domain
         [Required]
         public DateTimeOffset Modified { get; set; }
 
+        [Key]
         [Timestamp]
         public byte[] RowVersion { get; set; }
     }

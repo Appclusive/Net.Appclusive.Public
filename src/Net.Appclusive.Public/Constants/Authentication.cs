@@ -20,6 +20,7 @@ namespace Net.Appclusive.Public.Constants
     {
         public const string ENCODING = "iso-8859-1";
         public const char BASIC_AUTHORIZATION_SEPARATOR = ':';
+        public const string JWT_VALIDATOR_CONFIG_SECTION_NAME = "jwtValidatorConfiguration";
 
         public static class Type
         {
@@ -32,16 +33,17 @@ namespace Net.Appclusive.Public.Constants
 
         public static class AuthenticationFilter
         {
-            public const string SECTION_NAME = "authenticationManagerConfigurationSection";
+            public const string SECTION_NAME = "authenticationManagerConfiguration";
 
             // we use lower camel case for these constants as they are used as XML attributes 
             // inside app.configconfiguration section
 
             // ReSharper disable InconsistentNaming
-            public const bool localMachineAuthentication = false;
-            public const bool activeDirectoryAuthentication = false;
-            public const bool azureAuthentication = true;
-            public const bool oAuth2Authentication = true;
+            public const bool basicAuthentication = true;
+            public const bool negotiateAuthentication = true;
+            public const bool bearerAuthentication = true;
+            public const bool systemUserAuthentication = false;
+            public const bool testAuthentication = false;
             // ReSharper restore InconsistentNaming
         }
 
