@@ -165,6 +165,8 @@
     <Compile Include="Domain\Security\ItemAcl.cs" />
     <Compile Include="Domain\TenantDetails.cs" />
     <Compile Include="Domain\Inventory\ModelItem.cs" />
+    <Compile Include="Engine\ExecutionType.cs" />
+    <Compile Include="Engine\ExecutionTypeAttribute.cs" />
     <Compile Include="Linq\ExpressionExtensions.cs" />
     <Compile Include="Security\BuiltInRoles.cs" />
     <Compile Include="Security\Permission.cs" />
