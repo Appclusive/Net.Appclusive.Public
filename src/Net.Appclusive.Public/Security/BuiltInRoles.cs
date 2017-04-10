@@ -26,11 +26,11 @@ namespace Net.Appclusive.Public.Security
 
         public long TenantGuest { get; set; }
 
+        public long TenantEveryone { get; set; }
+
         public long CreatorOwner { get; set; }
 
         public long Everyone { get; set; }
-
-        public long AppclusiveEveryone { get; set; }
 
         public long ParentTenant { get; set; }
 
