@@ -32,13 +32,13 @@ namespace Net.Appclusive.Public.Domain.Security
         public virtual Permission Permission { get; set; }
 
         [Range(1, long.MaxValue)]
-        public long UserId { get; set; }
+        public long? UserId { get; set; }
 
         [JsonIgnore]
         public virtual User User { get; set; }
 
         [Range(1, long.MaxValue)]
-        public long RoleId { get; set; }
+        public long? RoleId { get; set; }
 
         [JsonIgnore]
         public virtual Role Role { get; set; }
