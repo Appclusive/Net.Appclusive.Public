@@ -35,11 +35,12 @@ namespace Net.Appclusive.Public.Constants
         {
             // ReSharper disable InconsistentNaming
             public const string UberAdmin = nameof(UberAdmin);
-            public const string GlobalEveryone = nameof(GlobalEveryone);
 
             public const string TenantAdmin = nameof(TenantAdmin);
             public const string TenantUser = nameof(TenantUser);
             public const string TenantGuest = nameof(TenantGuest);
+            public const string TenantEveryone = nameof(TenantEveryone);
+
             public const string CreatorOwner = nameof(CreatorOwner);
             public const string Everyone = nameof(Everyone);
             public const string ParentTenant = nameof(ParentTenant);
