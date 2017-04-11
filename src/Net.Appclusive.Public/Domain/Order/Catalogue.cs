@@ -17,7 +17,7 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Net.Appclusive.Public.Domain.Catalogue
+namespace Net.Appclusive.Public.Domain.Order
 {
     public class Catalogue : PublicEntity
     {

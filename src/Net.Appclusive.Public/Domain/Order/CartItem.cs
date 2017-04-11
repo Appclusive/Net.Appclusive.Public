@@ -19,7 +19,7 @@ using System.ComponentModel.DataAnnotations;
 using Net.Appclusive.Public.Types;
 using Newtonsoft.Json;
 
-namespace Net.Appclusive.Public.Domain.Catalogue
+namespace Net.Appclusive.Public.Domain.Order
 {
     public class CartItem : PublicEntity
     {

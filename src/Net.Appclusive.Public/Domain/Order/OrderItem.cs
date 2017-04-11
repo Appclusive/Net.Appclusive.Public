@@ -20,7 +20,7 @@ using Net.Appclusive.Public.Domain.Control;
 using Net.Appclusive.Public.Types;
 using Newtonsoft.Json;
 
-namespace Net.Appclusive.Public.Domain.Catalogue
+namespace Net.Appclusive.Public.Domain.Order
 {
     public class OrderItem : PublicEntity
     {
