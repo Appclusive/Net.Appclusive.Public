@@ -143,6 +143,7 @@
     <Compile Include="..\CommonAssemblySettings.cs">
       <Link>Properties\CommonAssemblySettings.cs</Link>
     </Compile>
+    <Compile Include="Constants\Inventory.cs" />
     <Compile Include="Constants\Approval.cs" />
     <Compile Include="Constants\HealthCheckSettings.cs" />
     <Compile Include="Constants\Data.cs" />
