@@ -18,7 +18,7 @@ namespace Net.Appclusive.Public.Domain.Control
 {
     public enum ApprovalType
     {
-        Decline = 0,
+        Default = 0,
         AutoApprove = 0,
         AutoDecline = 1,
     }

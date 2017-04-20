@@ -21,7 +21,7 @@ namespace Net.Appclusive.Public.Constants
     [SuppressMessage("ReSharper", "InconsistentNaming")]
     public static class Approval
     {
-        public const string PREFIX = "Net.Appclusive.Public.GlobalAttributes.Approval";
+        public const string PREFIX = "Net.Appclusive.Attributes.Approval";
         public const string DELIMITER = ".";
 
         public static class Approval0
