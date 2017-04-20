@@ -28,7 +28,7 @@ namespace Net.Appclusive.Public.Constants
         {
             public const string BASE = PREFIX + DELIMITER;
 
-            public const string ParentItemId = BASE + DELIMITER + nameof(ParentItemId);
+            public const string ParentItemId = BASE + nameof(Item) + DELIMITER + nameof(ParentItemId);
         }
     }
 }
