@@ -21,16 +21,5 @@ namespace Net.Appclusive.Public.Constants
         // ReSharper disable InconsistentNaming
         public const int BaseEntityPropertyNameMax = 2048;
         // ReSharper restore InconsistentNaming
-
-        public enum IntrinsicId : long
-        {
-            Item = 1
-            ,
-            ItemJob = 2
-            ,
-            End = ItemJob
-            ,
-            ReservationEnd = 4096
-        }
     }
 }
