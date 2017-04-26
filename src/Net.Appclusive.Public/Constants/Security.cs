@@ -80,6 +80,7 @@ namespace Net.Appclusive.Public.Constants
             public const long GRANT_OWNERSHIP = 3;
             public const long SECURITY_MANAGEMENT = 4;
             public const long GENERIC_READ = 5;
+            public const long IMPERSONATE = 6;
         }
 
         public static class RightName
@@ -89,6 +90,7 @@ namespace Net.Appclusive.Public.Constants
             public const string GRANT_OWNERSHIP = nameof(GRANT_OWNERSHIP);
             public const string SECURITY_MANAGEMENT = nameof(SECURITY_MANAGEMENT);
             public const string GENERIC_READ = nameof(GENERIC_READ);
+            public const string IMPERSONATE = nameof(IMPERSONATE);
         }
 
         // ReSharper disable once InconsistentNaming
