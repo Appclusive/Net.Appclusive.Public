@@ -63,8 +63,7 @@ namespace Net.Appclusive.Public.Constants
             Exception = int.MaxValue
         }
 
-        // DFTODO - create extension method for Logger with Type parameter to pass typeof actual class
-        // DFTODO - based on passed type (FullName?) the trace source name will be looked up in a dictionary. Dictionary could be initialized via a configuration section
+        // DFTODO - create extension method for Logger with Type parameter. Based on passed type (FullName?) the trace source name will be looked up in a dictionary. Dictionary could be initialized via a configuration section
         public static class TraceSourceName
         {
             public const string APPCLUSIVE_CORE = "Net.Appclusive.Core";
