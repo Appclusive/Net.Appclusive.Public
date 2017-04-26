@@ -78,9 +78,9 @@ namespace Net.Appclusive.Public.Constants
             public const long ACT_AS_PART_OF_THE_OPERATING_SYSTEM = 1;
             public const long TAKE_OWNERSHIP = 2;
             public const long GRANT_OWNERSHIP = 3;
-            public const long SECURITY_MANAGEMENT = 4;
-            public const long GENERIC_READ = 5;
-            public const long IMPERSONATE = 6;
+            public const long IMPERSONATE = 4;
+            public const long SECURITY_MANAGEMENT = 5;
+            public const long GENERIC_READ = 6;
         }
 
         public static class RightName
@@ -88,9 +88,9 @@ namespace Net.Appclusive.Public.Constants
             public const string ACT_AS_PART_OF_THE_OPERATING_SYSTEM = nameof(ACT_AS_PART_OF_THE_OPERATING_SYSTEM);
             public const string TAKE_OWNERSHIP = nameof(TAKE_OWNERSHIP);
             public const string GRANT_OWNERSHIP = nameof(GRANT_OWNERSHIP);
+            public const string IMPERSONATE = nameof(IMPERSONATE);
             public const string SECURITY_MANAGEMENT = nameof(SECURITY_MANAGEMENT);
             public const string GENERIC_READ = nameof(GENERIC_READ);
-            public const string IMPERSONATE = nameof(IMPERSONATE);
         }
 
         // ReSharper disable once InconsistentNaming
