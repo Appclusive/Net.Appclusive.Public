@@ -59,6 +59,7 @@ namespace Net.Appclusive.Public.Constants
             public const string UPN = "upn";
             public const string EXPIRATION = "exp";
             public const string ISSUER = "iss";
+            public const string AUDIENCE = "aud";
         }
     }
 }
