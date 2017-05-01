@@ -22,6 +22,7 @@ namespace Net.Appclusive.Public.Constants
         public const char BASIC_AUTHORIZATION_SEPARATOR = ':';
         public const string AZURE_JWT_VALIDATION_CONFIG_SECTION_NAME = "azureJwtValidationConfiguration";
         public const string APPCLUSIVE_JWT_VALIDATION_CONFIG_SECTION_NAME = "appclusiveJwtValidationConfiguration";
+        public const string APPCLUSIVE_JWT_ISSUER = "https://sts.appclusive.net/";
 
         public static class Type
         {
