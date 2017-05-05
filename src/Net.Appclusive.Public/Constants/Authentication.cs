@@ -57,10 +57,11 @@ namespace Net.Appclusive.Public.Constants
 
         public static class JwtKey
         {
-            public const string UPN = "upn";
+            public const string AUDIENCE = "aud";
             public const string EXPIRATION = "exp";
             public const string ISSUER = "iss";
-            public const string AUDIENCE = "aud";
+            public const string TID = "tid";
+            public const string UPN = "upn";
         }
     }
 }
