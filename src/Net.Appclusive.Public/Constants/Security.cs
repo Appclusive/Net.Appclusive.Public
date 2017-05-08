@@ -28,7 +28,10 @@ namespace Net.Appclusive.Public.Constants
         public static class RoleId
         {
             public const long UBER_ADMIN = 1;
-            public const long GLOBAL_EVERYONE = 2;
+            public const long CREATOR_OWNER = 2;
+            public const long EVERYONE = 3;
+            public const long PARENT_TENANT = 4;
+            public const long CHILD_TENANTS = 5;
         }
 
         public static class RoleName

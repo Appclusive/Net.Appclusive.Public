@@ -20,6 +20,8 @@ namespace Net.Appclusive.Public.Security
 {
     public class BuiltInRoles
     {
+        public long UberAdmin { get; set; }
+
         public long CreatorOwner { get; set; }
 
         public long Everyone { get; set; }
