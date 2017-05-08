@@ -32,8 +32,6 @@ namespace Net.Appclusive.Public.Domain.Identity
 
         public BuiltInRoles BuiltInRoles { get; set; }
 
-        public long ItemJobId { get; set; }
-
         public long ItemId { get; set; }
 
         public long AclId { get; set; }
