@@ -28,10 +28,9 @@ namespace Net.Appclusive.Public.Constants
         public static class RoleId
         {
             public const long UBER_ADMIN = 1;
-            public const long CREATOR_OWNER = 2;
-            public const long EVERYONE = 3;
-            public const long PARENT_TENANT = 4;
-            public const long CHILD_TENANTS = 5;
+            public const long EVERYONE = 2;
+            public const long PARENT_TENANT = 3;
+            public const long CHILD_TENANTS = 4;
         }
 
         public static class RoleName
@@ -39,11 +38,11 @@ namespace Net.Appclusive.Public.Constants
             // ReSharper disable InconsistentNaming
             public const string UberAdmin = nameof(UberAdmin);
 
-            public const string CreatorOwner = nameof(CreatorOwner);
             public const string Everyone = nameof(Everyone);
             public const string ParentTenant = nameof(ParentTenant);
             public const string ChildTenants = nameof(ChildTenants);
 
+            public const string CreatorOwner = nameof(CreatorOwner);
             public const string TenantAdmin = nameof(TenantAdmin);
             public const string TenantUser = nameof(TenantUser);
             public const string TenantGuest = nameof(TenantGuest);

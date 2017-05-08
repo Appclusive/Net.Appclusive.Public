@@ -22,13 +22,13 @@ namespace Net.Appclusive.Public.Security
     {
         public long UberAdmin { get; set; }
 
-        public long CreatorOwner { get; set; }
-
         public long Everyone { get; set; }
 
         public long ParentTenant { get; set; }
 
         public long ChildTenants { get; set; }
+
+        public long CreatorOwner { get; set; }
 
         public long TenantAdmin { get; set; }
 
@@ -47,10 +47,10 @@ namespace Net.Appclusive.Public.Security
                 default:
                     return false;
                 case Constants.Security.RoleName.UberAdmin:
-                case Constants.Security.RoleName.CreatorOwner:
                 case Constants.Security.RoleName.Everyone:
                 case Constants.Security.RoleName.ParentTenant:
                 case Constants.Security.RoleName.ChildTenants:
+                case Constants.Security.RoleName.CreatorOwner:
                 case Constants.Security.RoleName.TenantAdmin:
                 case Constants.Security.RoleName.TenantUser:
                 case Constants.Security.RoleName.TenantGuest:
