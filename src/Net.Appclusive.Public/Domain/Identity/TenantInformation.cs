@@ -28,8 +28,6 @@ namespace Net.Appclusive.Public.Domain.Identity
 
         public long CustomerId { get; set; }
 
-        public long ConfigurationId { get; set; }
-
         public BuiltInRoles BuiltInRoles { get; set; }
 
         public long ItemId { get; set; }
