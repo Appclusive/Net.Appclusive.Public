@@ -24,6 +24,8 @@ namespace Net.Appclusive.Public.Constants
 
         public const string WORKFLOW_ASSEMBLY_NAMESPACE_PREFIX = "Net.Appclusive.Workflows";
 
+        public const string INITIATOR_ID_PARAMTER_NAME = "InitiatorId";
+
         public static class EventId
         {
             // ReSharper disable InconsistentNaming
