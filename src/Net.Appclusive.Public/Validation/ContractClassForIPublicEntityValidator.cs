@@ -43,6 +43,10 @@ namespace Net.Appclusive.Public.Validation
             Contract.Requires(null != originalEntity);
             Contract.Requires(modifiedEntity.Id == originalEntity.Id);
             Contract.Requires(modifiedEntity.Details.Tid == originalEntity.Details.Tid);
+            Contract.Requires(modifiedEntity.Details.CreatedById == originalEntity.Details.CreatedById);
+            Contract.Requires(modifiedEntity.Details.ModifiedById == originalEntity.Details.ModifiedById);
+            Contract.Requires(modifiedEntity.Details.Created == originalEntity.Details.Created);
+            Contract.Requires(modifiedEntity.Details.Modified == originalEntity.Details.Modified);
             Contract.Requires(modifiedEntity.IsValid());
             Contract.Ensures(null != Contract.Result<T>());
 
@@ -56,7 +60,9 @@ namespace Net.Appclusive.Public.Validation
             Contract.Requires(!delta.ContainsKey(nameof(PublicEntity.Id)));
             Contract.Requires(!delta.ContainsKey(nameof(PublicEntityDetails.Tid)));
             Contract.Requires(!delta.ContainsKey(nameof(PublicEntityDetails.CreatedById)));
+            Contract.Requires(!delta.ContainsKey(nameof(PublicEntityDetails.ModifiedById)));
             Contract.Requires(!delta.ContainsKey(nameof(PublicEntityDetails.Created)));
+            Contract.Requires(!delta.ContainsKey(nameof(PublicEntityDetails.Modified)));
             Contract.Requires(!delta.ContainsKey(nameof(PublicEntityDetails.RowVersion)));
             Contract.Ensures(null != Contract.Result<T>());
 
