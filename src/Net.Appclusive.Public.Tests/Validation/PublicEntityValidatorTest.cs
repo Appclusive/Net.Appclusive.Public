@@ -267,7 +267,7 @@ namespace Net.Appclusive.Public.Tests.Validation
                 ,
                 Details = new PublicEntityDetails
                 {
-                    Created = DateTimeOffset.MinValue
+                    Created = DateTimeOffset.Now
                 }
             };
 
@@ -277,7 +277,7 @@ namespace Net.Appclusive.Public.Tests.Validation
                 ,
                 Details = new PublicEntityDetails
                 {
-                    Created = DateTimeOffset.MaxValue
+                    Created = DateTimeOffset.MinValue
                 }
             };
 
@@ -298,7 +298,7 @@ namespace Net.Appclusive.Public.Tests.Validation
                 ,
                 Details = new PublicEntityDetails
                 {
-                    Modified = DateTimeOffset.MinValue
+                    Modified = DateTimeOffset.Now
                 }
             };
 
@@ -308,7 +308,7 @@ namespace Net.Appclusive.Public.Tests.Validation
                 ,
                 Details = new PublicEntityDetails
                 {
-                    Modified = DateTimeOffset.MaxValue
+                    Modified = DateTimeOffset.MinValue
                 }
             };
 
