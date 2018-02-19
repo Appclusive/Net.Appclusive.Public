@@ -28,6 +28,7 @@ namespace Net.Appclusive.Public.Tests.Validation
     {
         private readonly byte[] rowVersion = { 0x42 };
         private const long ENTITY_ID = 42;
+        private const long USER_ID = 13;
 
         private PublicEntityValidator<PublicEntity> Sut { get; } = new PublicEntityValidator<PublicEntity>();
 
@@ -185,7 +186,130 @@ namespace Net.Appclusive.Public.Tests.Validation
                 {
                     Tid = Guid.NewGuid()
                 }
+            };
+
+            // Act
+            Sut.ForUpdate(modifiedEntity, originalEntity);
+
+            // Assert
+        }
+
+        [ExpectContractFailure(MessagePattern = @"Precondition.+modifiedEntity.\Details\.CreatedById.+originalEntity\.Details\.CreatedById")]
+        [TestMethod]
+        public void ForUpdateWithNonMatchingCreatedByIdThrowsContractException()
+        {
+            // Arrange
+            var modifiedEntity = new PublicEntity()
+            {
+                Id = ENTITY_ID
                 ,
+                Details = new PublicEntityDetails
+                {
+                    CreatedById = USER_ID
+                }
+            };
+
+            var originalEntity = new PublicEntity()
+            {
+                Id = ENTITY_ID
+                ,
+                Details = new PublicEntityDetails
+                {
+                    CreatedById = USER_ID + 1
+                }
+            };
+
+            // Act
+            Sut.ForUpdate(modifiedEntity, originalEntity);
+
+            // Assert
+        }
+
+        [ExpectContractFailure(MessagePattern = @"Precondition.+modifiedEntity.\Details\.ModifiedById.+originalEntity\.Details\.ModifiedById")]
+        [TestMethod]
+        public void ForUpdateWithNonMatchingModifiedByIdThrowsContractException()
+        {
+            // Arrange
+            var modifiedEntity = new PublicEntity()
+            {
+                Id = ENTITY_ID
+                ,
+                Details = new PublicEntityDetails
+                {
+                    ModifiedById = USER_ID
+                }
+            };
+
+            var originalEntity = new PublicEntity()
+            {
+                Id = ENTITY_ID
+                ,
+                Details = new PublicEntityDetails
+                {
+                    ModifiedById = USER_ID + 1
+                }
+            };
+
+            // Act
+            Sut.ForUpdate(modifiedEntity, originalEntity);
+
+            // Assert
+        }
+
+        [ExpectContractFailure(MessagePattern = @"Precondition.+modifiedEntity.\Details\.Created.+originalEntity\.Details\.Created")]
+        [TestMethod]
+        public void ForUpdateWithNonMatchingCreatedDateThrowsContractException()
+        {
+            // Arrange
+            var modifiedEntity = new PublicEntity()
+            {
+                Id = ENTITY_ID
+                ,
+                Details = new PublicEntityDetails
+                {
+                    Created = DateTimeOffset.MinValue
+                }
+            };
+
+            var originalEntity = new PublicEntity()
+            {
+                Id = ENTITY_ID
+                ,
+                Details = new PublicEntityDetails
+                {
+                    Created = DateTimeOffset.MaxValue
+                }
+            };
+
+            // Act
+            Sut.ForUpdate(modifiedEntity, originalEntity);
+
+            // Assert
+        }
+
+        [ExpectContractFailure(MessagePattern = @"Precondition.+modifiedEntity.\Details\.Modified.+originalEntity\.Details\.Modified")]
+        [TestMethod]
+        public void ForUpdateWithNonMatchingModifiedDateThrowsContractException()
+        {
+            // Arrange
+            var modifiedEntity = new PublicEntity()
+            {
+                Id = ENTITY_ID
+                ,
+                Details = new PublicEntityDetails
+                {
+                    Modified = DateTimeOffset.MinValue
+                }
+            };
+
+            var originalEntity = new PublicEntity()
+            {
+                Id = ENTITY_ID
+                ,
+                Details = new PublicEntityDetails
+                {
+                    Modified = DateTimeOffset.MaxValue
+                }
             };
 
             // Act
@@ -278,7 +402,23 @@ namespace Net.Appclusive.Public.Tests.Validation
             // Arrange
             var delta = new DictionaryParameters()
             {
-                { nameof(PublicEntityDetails.CreatedById), Int64.MaxValue }
+                { nameof(PublicEntityDetails.CreatedById), USER_ID }
+            };
+
+            // Act
+            Sut.ForUpdate(new PublicEntity(), delta);
+
+            // Assert
+        }
+
+        [ExpectContractFailure(MessagePattern = @"Precondition.+delta\.ContainsKey.+PublicEntityDetails\.ModifiedById")]
+        [TestMethod]
+        public void ForUpdateWithDeltaContainingModifiedByIdThrowsContractException()
+        {
+            // Arrange
+            var delta = new DictionaryParameters()
+            {
+                { nameof(PublicEntityDetails.ModifiedById), USER_ID }
             };
 
             // Act
@@ -295,6 +435,22 @@ namespace Net.Appclusive.Public.Tests.Validation
             var delta = new DictionaryParameters()
             {
                 { nameof(PublicEntityDetails.Created), DateTimeOffset.Now }
+            };
+
+            // Act
+            Sut.ForUpdate(new PublicEntity(), delta);
+
+            // Assert
+        }
+
+        [ExpectContractFailure(MessagePattern = @"Precondition.+delta\.ContainsKey.+PublicEntityDetails\.Modified")]
+        [TestMethod]
+        public void ForUpdateWithDeltaContainingModifiedDateThrowsContractException()
+        {
+            // Arrange
+            var delta = new DictionaryParameters()
+            {
+                { nameof(PublicEntityDetails.Modified), DateTimeOffset.Now }
             };
 
             // Act
