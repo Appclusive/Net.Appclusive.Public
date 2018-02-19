@@ -90,7 +90,6 @@ namespace Net.Appclusive.Public.Tests.Validation
                     Tid = default(Guid),
                     RowVersion = rowVersion
                 }
-                ,
             };
 
             // Act
@@ -110,7 +109,6 @@ namespace Net.Appclusive.Public.Tests.Validation
                 {
                     Tid = default(Guid)
                 }
-                ,
             };
 
             // Act
@@ -177,7 +175,6 @@ namespace Net.Appclusive.Public.Tests.Validation
                 {
                     Tid = Guid.NewGuid()
                 }
-                ,
             };
 
             var originalEntity = new PublicEntity()
