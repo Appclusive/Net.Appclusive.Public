@@ -75,6 +75,7 @@ namespace Net.Appclusive.Public.Constants
             public const string ACCESS_MANAGER = "Net.Appclusive.Core.Security.AccessManager";
             public const string DOMAIN_CONTROL = "Net.Appclusive.Core.Control";
             public const string INVENTORY = "Net.Appclusive.Core.Model";
+            public const string APPCLUSIVE_NET_CLIENT = "Net.Appclusive.Net.Client";
         }
     }
 }
